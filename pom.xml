@@ -34,7 +34,6 @@
 
 <version>3.5.1</version>
 
-
 <configuration>
 
 <source>${jdk.level}</source>
@@ -60,13 +59,16 @@
 
 <configuration>
 
+<source>${jdk.level}</source>
+
+<target>${jdk.level}</target>
+
 
 <suiteXmlFiles>
 
 <suiteXmlFile>testng.xml</suiteXmlFile>
 
 </suiteXmlFiles>
-
 
 <systemPropertyVariables>
 
@@ -121,11 +123,6 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.hynnet/jacob -->
-
-
-<!-- https://mvnrepository.com/artifact/com.hynnet/jacob -->
-
-
 
 <dependency>
 
