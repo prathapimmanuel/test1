@@ -56,12 +56,10 @@
 
 <version>2.19.1</version>
 
-
 <configuration>
 
-<source>${jdk.level}</source>
-
-<target>${jdk.level}</target>
+                    <forkMode>once</forkMode>
+                    <forkedProcessTimeoutInSeconds>720</forkedProcessTimeoutInSeconds>
 
 
 <suiteXmlFiles>
