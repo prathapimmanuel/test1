@@ -3,17 +3,166 @@
   <groupId>Zephyr</groupId>
   <artifactId>Zephyr</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+ <name>My Maven Project</name>
+
+<description>This is a simple Maven Project</description>
+
+
+<properties>
+
+<jre.level>1.8</jre.level>
+
+<jdk.level>1.8</jdk.level>
+
+</properties>
+
+
+<build>
+
+
+<plugins>
+
+<!-- Compiler plug-in -->
+
+
+
+<plugin>
+
+<groupId>org.apache.maven.plugins</groupId>
+
+<artifactId>maven-compiler-plugin</artifactId>
+
+<version>3.5.1</version>
+
+
+<configuration>
+
+<source>${jdk.level}</source>
+
+<target>${jdk.level}</target>
+
+</configuration>
+
+</plugin>
+
+<!-- Added Surefire Plugin configuration to execute tests -->
+
+
+
+<plugin>
+
+<groupId>org.apache.maven.plugins</groupId>
+
+<artifactId>maven-surefire-plugin</artifactId>
+
+<version>2.19.1</version>
+
+
+<configuration>
+
+
+<suiteXmlFiles>
+
+<suiteXmlFile>testng.xml</suiteXmlFile>
+
+</suiteXmlFiles>
+
+
+<systemPropertyVariables>
+
+<browserName>chrome</browserName>
+
+</systemPropertyVariables>
+
+</configuration>
+
+</plugin>
+
+</plugins>
+
+</build>
+
+
+<dependencies>
+
+
+<dependency>
+
+<groupId>org.testng</groupId>
+
+<artifactId>testng</artifactId>
+
+<version>6.9.8</version>
+
+<scope>test</scope>
+
+</dependency>
+
+
+<dependency>
+
+<groupId>org.seleniumhq.selenium</groupId>
+
+<artifactId>selenium-java</artifactId>
+
+<version>2.53.1</version>
+
+</dependency>
+
+
+<dependency>
+
+<groupId>org.seleniumhq.selenium</groupId>
+
+<artifactId>selenium-server</artifactId>
+
+<version>2.53.1</version>
+
+</dependency>
+
+
+<dependency>
+
+<groupId>org.seleniumhq.selenium</groupId>
+
+<artifactId>selenium-server</artifactId>
+
+<version>2.53.1</version>
+
+</dependency>
+
+
+<dependency>
+
+<groupId>ALM_SetUp</groupId>
+
+<artifactId>ALM_SetUp</artifactId>
+
+<scope>system</scope>
+
+<version>2.0</version>
+
+<systemPath>D:/Data Backup/christies-project/supportlibraries/ATU_ALM_ServiceWrapper_2.0.jar</systemPath>
+
+</dependency> 
+
+<!-- https://mvnrepository.com/artifact/com.hynnet/jacob -->
+
+
+<!-- https://mvnrepository.com/artifact/com.hynnet/jacob -->
+
+
+
+<dependency>
+
+<groupId>com.hynnet</groupId>
+
+<artifactId>jacob</artifactId>
+
+<version>1.18</version>
+
+</dependency>
+
+</dependencies>
+
 </project>
