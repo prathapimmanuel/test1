@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9508" started-at="2017-11-02T12:52:53Z" finished-at="2017-11-02T12:53:03Z">
+  <suite name="Default suite" duration-ms="8835" started-at="2017-11-02T13:34:47Z" finished-at="2017-11-02T13:34:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9508" started-at="2017-11-02T12:52:53Z" finished-at="2017-11-02T12:53:03Z">
+    <test name="Test Luck" duration-ms="8835" started-at="2017-11-02T13:34:47Z" finished-at="2017-11-02T13:34:56Z">
       <class name="test.GoogleTesting">
-        <test-method status="PASS" signature="GoogleTest()[pri:0, instance:test.GoogleTesting@6a3f77]" name="GoogleTest" duration-ms="9491" started-at="2017-11-02T18:22:53Z" finished-at="2017-11-02T18:23:03Z">
+        <test-method status="PASS" signature="GoogleTest()[pri:0, instance:test.GoogleTesting@6a3f77]" name="GoogleTest" duration-ms="8833" started-at="2017-11-02T19:04:47Z" finished-at="2017-11-02T19:04:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoogleTest -->
       </class> <!-- test.GoogleTesting -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test Luck -->
+  </suite> <!-- Default suite -->
 </testng-results>
