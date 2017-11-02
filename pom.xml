@@ -120,32 +120,6 @@
 
 </dependency>
 
-
-<dependency>
-
-<groupId>org.seleniumhq.selenium</groupId>
-
-<artifactId>selenium-server</artifactId>
-
-<version>2.53.1</version>
-
-</dependency>
-
-
-<dependency>
-
-<groupId>ALM_SetUp</groupId>
-
-<artifactId>ALM_SetUp</artifactId>
-
-<scope>system</scope>
-
-<version>2.0</version>
-
-<systemPath>D:/Data Backup/christies-project/supportlibraries/ATU_ALM_ServiceWrapper_2.0.jar</systemPath>
-
-</dependency> 
-
 <!-- https://mvnrepository.com/artifact/com.hynnet/jacob -->
 
 
