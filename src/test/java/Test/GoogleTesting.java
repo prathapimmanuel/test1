@@ -13,7 +13,7 @@ public class GoogleTesting{
 	@Test
 	public void GoogleTest() {
 		 
-		System.setProperty("webdriver.chrome.driver", "D:\\Data Backup\\Selenium\\chromedriver.exe");
+		/*System.setProperty("webdriver.chrome.driver", "D:\\Data Backup\\Selenium\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver(); 
         driver.manage().window().maximize();
@@ -21,6 +21,7 @@ public class GoogleTesting{
         
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("Cheese!");
-        element.submit();
-	} 
+        element.submit();*/
+		System.out.println("Test updated");
+	}  
 }
