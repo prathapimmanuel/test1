@@ -36,9 +36,10 @@
 
 <configuration>
 
-<source>${jdk.level}</source>
+<source>1.8</source>
 
-<target>${jdk.level}</target>
+<target>1.8</target>
+ <fork>true</fork>
 
 </configuration>
 

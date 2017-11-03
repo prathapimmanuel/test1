@@ -4,7 +4,7 @@
 <!-- Default suite -->
 <test name="GoogleTesting" verbose="2">
 <classes>
-<class name="test.GoogleTesting"/>
+<class name="Test.GoogleTesting"/>
 </classes>
 </test>
 <!-- Default test -->
