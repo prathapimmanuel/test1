@@ -1,6 +1,5 @@
 package Test;
 
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -9,12 +8,9 @@ import framework.core.EnvParameters;
 import framework.core.EnvParameters.OSType;
 
 import java.io.File;
-import java.lang.reflect.Method;
 
-import org.junit.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import Pages.GooglePage;
 
 
