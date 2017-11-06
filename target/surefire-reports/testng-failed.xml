@@ -5,7 +5,9 @@
     <classes>
       <class name="Test.GoogleTesting">
         <methods>
-          <include name="GoogleTest"/>
+          <include name="testSetup"/>
+          <include name="testValidatesearch"/>
+          <include name="testSearchGoogle"/>
         </methods>
       </class> <!-- Test.GoogleTesting -->
     </classes>
