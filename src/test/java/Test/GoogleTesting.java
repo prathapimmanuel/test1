@@ -46,7 +46,7 @@ private void setupChromeDriver() throws Exception {
 				targetChromedriver = new File(EnvParameters.TEST_ROOT_DIR
 						+ File.separator + "drivers" + File.separator + "chrome"
 						+ File.separator + "linux" + File.separator
-						+ "chromedriver");
+						+ "chromedriver.exe");
 			}
 			System.setProperty(ChromProp, targetChromedriver.getAbsolutePath());
 			driver = new ChromeDriver();
