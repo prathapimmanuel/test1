@@ -25,7 +25,7 @@ public class GoogleTesting  {
 	Boolean flag = false;
 	
 	
-	@BeforeTest
+@BeforeTest
 private void setupChromeDriver() throws Exception {
 
 			String ChromProp = "webdriver.chrome.driver";
@@ -46,7 +46,7 @@ private void setupChromeDriver() throws Exception {
 				targetChromedriver = new File(EnvParameters.TEST_ROOT_DIR
 						+ File.separator + "drivers" + File.separator + "chrome"
 						+ File.separator + "linux" + File.separator
-						+ "chromedriver.exe");
+						+ "chromedriver");
 			}
 			System.setProperty(ChromProp, targetChromedriver.getAbsolutePath());
 			driver = new ChromeDriver();
