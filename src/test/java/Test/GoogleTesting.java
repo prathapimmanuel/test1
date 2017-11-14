@@ -11,6 +11,8 @@ import java.io.File;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
 import Pages.GooglePage;
 
 
@@ -37,19 +39,18 @@ private void setupChromeDriver() throws Exception {
 						+ File.separator + "win" + File.separator
 						+ "chromedriver.exe");
 			}
-
 			else if (EnvParameters.getOSname() == OSType.mac) {
 				targetChromedriver = new File(EnvParameters.TEST_ROOT_DIR
 						+ File.separator + "drivers" + File.separator + "chrome"
 						+ File.separator + "mac" + File.separator + "chromedriver");
-			} else if (EnvParameters.getOSname() == OSType.linux) {
+			}else if (EnvParameters.getOSname() == OSType.linux) {
 				targetChromedriver = new File(EnvParameters.TEST_ROOT_DIR
 						+ File.separator + "drivers" + File.separator + "chrome"
 						+ File.separator + "linux" + File.separator
-						+ "chromedriver");
+						+ "HtmlUnitDriver");  
 			}
 			System.setProperty(ChromProp, targetChromedriver.getAbsolutePath());
-			driver = new ChromeDriver();
+			driver = new ChromeDriver();   
 		}
 	
 
@@ -57,7 +58,7 @@ private void setupChromeDriver() throws Exception {
 	public void testOpenGoogle() {
 		
 		GooglePage objGooglePage = new GooglePage(driver);
-		
+		System.out.println("google open");
 		objGooglePage.openApplication(dataURL);
 		flag = objGooglePage.getTitle().contains("Google");
 		System.out.println("flag"+flag);
@@ -66,28 +67,6 @@ private void setupChromeDriver() throws Exception {
 
 	}
 
-	//@Test
-	public void testSearchGoogle() {
-		GooglePage objGooglePage = new GooglePage(driver);
-		objGooglePage.openApplication(dataURL);
-		objGooglePage.doSearch("Test Automation");
-		flag = objGooglePage.getTitle().contains("Auto mation");
-		System.out.println("flag"+flag);
-		//Assert.assertTrue(flag, "search succeeds");
-		//softAssert.assertAll();
-	}
-	
-	//@Test 
-	public void testValidatesearch() {
-		GooglePage objGooglePage = new GooglePage(driver);
-		objGooglePage.openApplication(dataURL);
-		objGooglePage.doSearch("Test Automation");
-		flag = !objGooglePage.getResultsCount().isEmpty();
-		System.out.println("flag"+flag);
-		/*Assert.assertTrue(flag, "search results available");
-		softAssert.assertAll();*/
-		
-	}
 	
 	@AfterMethod()
 	public void postTestCase() {
